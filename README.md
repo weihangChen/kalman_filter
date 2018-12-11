@@ -11,7 +11,7 @@ there are three python script files, each file can be run seperatly, the file wi
 one for predicted states, one for measurements, one for adjusted states. As shown in the lectures, three interations are done in this implementation as well, and the result are verified. (the calculation for the last itration from the video has some errors, and you should be able to find out)
 
 Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/weihangChen/kalman_filter/blob/master/Kalman/img/plot.PNG "Logo Title Text 1")
 
 3. matrix_test.py contains some matrix operator tests, plus assertion of the what happens in each step in the complete pipeline.
 
