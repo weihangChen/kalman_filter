@@ -1,16 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-class State:
-    def __init__(self, x, y , vx, vy):
-        self.x = x
-        self.y = y
-        self.vx = vx
-        self.vy = vy
 
-class ProcessCovarianceError:
-    def __init__(self):
-        pass
 
 class Model:
     #ideal situation where math formula is used to predict the future
@@ -107,12 +98,7 @@ class Model:
         plt.plot([0, 1, 2, 3], [measurements[0][0], adjusted_state[0], adjusted_state2[0], adjusted_state3[0]], color = 'green')
         plt.show()
 
-#state matrix , from one state to next state
-#it is the theotical matrix representation of the equation
 
-#use matmul, no multiply
-#use add, no sum
-#https://bit.ly/2RKDhaX
 if __name__ == "__main__":
     m = Model()
     m.run()
