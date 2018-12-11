@@ -33,6 +33,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="img\" />
     <Folder Include="src\" />
   </ItemGroup>
   <ItemGroup>
