@@ -46,8 +46,10 @@ class Model:
         assert est == 70.48
         error_est = self.cal_error(kg, error_est)
         assert error_est == 1.01
+        
 
 #demo1.py contains the most simplified version of implementation, no matrix
 if __name__ == "__main__":
     m = Model()
     m.run()
+    print("PASS!")
