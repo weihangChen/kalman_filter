@@ -5,18 +5,19 @@ class Model:
         return round(kg,2)
 
     def cal_estimate(self, est_before, kg, mea):
-        est_now = est_before + kg*(mea - est_before)
-        return round(est_now,2 )
+        est_now = est_before + kg * (mea - est_before)
+        return round(est_now,2)
 
     def cal_error(self, kg, error_est_before):
-        error_est_now = (1-kg)*error_est_before
+        error_est_now = (1 - kg) * error_est_before
         return round(error_est_now,2)
 
 
    
     #https://bit.ly/2C06f0Q single step
     #https://bit.ly/2QK69Tw multi steps
-    #this method will verify against conent for 2 iterations from the second video
+    #this method will verify against conent for 2 iterations from the second
+    #video
     #the updated values are "est", "error_est" and "kg"
     def run(self):
         #const and init values

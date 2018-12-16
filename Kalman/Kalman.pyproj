@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>da203a66-e51b-40fb-be56-807eb44f28d0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>src\kalman_filer_impl.py</StartupFile>
+    <StartupFile>src\kalman_filer_upgrade.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,13 +22,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="src\kalman_filer_upgrade.py" />
     <Compile Include="src\matrix_test.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\temperature.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\kalman_filer_impl.py">
+    <Compile Include="src\kalman_filer_youtube.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
