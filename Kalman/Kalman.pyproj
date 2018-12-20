@@ -26,9 +26,6 @@
     <Compile Include="src\matrix_test.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\module1.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="src\temperature.py">
       <SubType>Code</SubType>
     </Compile>
