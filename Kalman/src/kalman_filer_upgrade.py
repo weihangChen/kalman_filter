@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d.axes3d import Axes3D
 iterations = 30
 positionX_error = positionY_error = 20
 velocityX_error = velocityY_error = 5
@@ -98,7 +97,6 @@ if __name__ == "__main__":
 	A = get_A(1)
 	H = get_H(1)
 	states_adjusted = []
-	#error_covariances = []
 	
 	state_base = []
 	error_covariance_base = []
@@ -121,8 +119,7 @@ if __name__ == "__main__":
 		state_adjusted = model.cal_adjusted_state(state_predicted, kalman_gain, measurements[k])
 		error_covariance_adjusted = model.cal_adjusted_error_covariance(error_covariance_predicted, kalman_gain, I, H)
 		states_adjusted.append(state_adjusted)
-		#error_covariances.append(error_covariance_adjusted)
-
+		
 
 
 	plt.plot([x[0] for x in states], [x[1] for x in states], color = 'yellow', marker = 'o')
